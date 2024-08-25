@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.search_container {
+  width: 100vw;
+  height: 100vh;
+  /* view height */
+  background-image: url("https://i.pinimg.com/474x/38/d3/0e/38d30ecfe41c21551c043443d330d637.jpg");
+  background-size: cover;
+  padding: 150px 280px;
+}
+
+.search_container h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+  font-family: "Ga Maamli", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.search_container input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  /* border-style: none; */
+  outline: none;
+}

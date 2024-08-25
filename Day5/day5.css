@@ -1,0 +1,28 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.menu_container {
+  width: 100vw;
+  min-height: 20px;
+  background-color: #7e57c2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+
+.items {
+  display: flex;
+}
+
+.items .item {
+  padding: 20px;
+}
+
+.items .item:hover {
+  background-color: aliceblue;
+  cursor: pointer;
+}

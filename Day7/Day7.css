@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 2000px;
+}
+
+.container {
+  width: 120px;
+  min-height: 300px;
+  position: fixed;
+  right: 15px;
+  top: 30%;
+  z-index: 1;
+  /* background-color: red; */
+}
+
+.item {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.item i {
+  margin-left: 10px;
+  font-size: 20px;
+  padding: 10px;
+  background-color: rgb(67, 164, 191);
+  border-radius: 50%;
+  color: whitesmoke;
+}
+
+#myCheckBox {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  right: 0px;
+  opacity: 0;
+}
+
+.receive_change {
+  height: 0px;
+  overflow: hidden;
+  border: 2px solid red;
+  transition-property: height;
+  transition-duration: 2s;
+}
+
+#myCheckBox:checked ~ .receive_change {
+  height: 300px;
+}

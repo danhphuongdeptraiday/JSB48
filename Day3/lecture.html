@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display</title>
+    <style>
+      span {
+        background-color: red;
+        width: 100px;
+        height: 100px;
+        padding: 20px;
+        margin-top: 100px;
+        margin-left: 20px;
+        display: inline-block;
+      }
+      h1 {
+        /* display: inline; */
+      }
+
+      p {
+        /* display: inline; */
+      }
+
+      /* CSS cách 1 */
+      .box {
+        /* display: block; */
+        width: 40px;
+        margin: 0 auto;
+        height: 40px;
+        background-color: blue;
+        border-radius: 50%;
+      }
+
+      /* Css của cách 1 */
+      .box i {
+        width: 20px;
+        display: block;
+        margin: 0 auto;
+        line-height: 40px;
+      }
+
+      /* CSS của cách 2 */
+      .fa-facebook-messenger {
+        background-color: rebeccapurple;
+        padding: 20px;
+        border-radius: 50%;
+      }
+    </style>
+
+    <script
+      src="https://kit.fontawesome.com/b25957ae4f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <!-- Cách 1: Dùng được nhiều trường hợp -->
+    <div class="box">
+      <!-- <i style="color: red" class="fa-solid fa-phone"></i> -->
+    </div>
+
+    <!-- Cách 2: dễ hiểu hơn -->
+    <!-- <i class="fa-brands fa-facebook-messenger"></i>
+    <i class="fa-brands fa-facebook-messenger"></i>
+    <i class="fa-brands fa-facebook-messenger"></i>
+    <i class="fa-brands fa-facebook-messenger"></i> -->
+
+    <!-- Display: block
+        - Chiều ngang của khối đó sẽ chiếm hết bề ngang màn hình
+        - Có thể chinh được width, height, margin - padding 4 hướng
+        VD: h1-h6, p, div, ...
+    -->
+
+    <h1>Nguyễn Danh Phương</h1>
+    <p>ABCDEF</p>
+
+    <!-- <h1>Nguyễn Danh Phương</h1>
+    <p>TTTTT</p> -->
+
+    <!-- Display: inline
+        - chiều ngang phụ thuộc vào nội dung bên trong thẻ
+        - KO CHỈNH ĐƯỢC: width, height, margin-top, margin-bottom
+        VD: span, b, u, i, a
+    -->
+    <span> Hello World </span>
+    <span style="background-color: blue">Tôi đang học bài</span>
+    <b>ádasd</b>
+    <u>jasndijanskjnkj</u>
+    <a href="">fffffffffffffffffff</a>
+
+    <!-- 
+        Display: inline-block
+        - Chiều ngang vẫn phụ thuộc vào nội dung bên bên trong nhưng chỉnh đc w, h
+        - Chỉnh được margin các hướng
+    -->
+
+    <!-- <span>Hà Nội nsaldkfnskjdnfkjnsdkfjnskdkn</span>
+    <u>hihi</u> -->
+
+    <!-- Display: inline-block -->
+  </body>
+</html>

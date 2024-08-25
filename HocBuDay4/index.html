@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* display: flex dùng để quản trị những thẻ  con nằm trong nó 
+        - Khi ta gọi flex thì những thẻ con nằm trong nó sẽ nằm ngang hàng với nhau
+        - justify-content: dùng để căn chỉnh các khối nằm cách nhau theo trục ngang
+        - align-items: dùng để căn chỉnh các khối theo trục dọc
+      */
+      .container {
+        width: 700px;
+        height: 500px;
+        background-color: antiquewhite;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        border: 2px solid red;
+      }
+
+      .left {
+        width: 100px;
+        height: 50px;
+        border: 2px solid red;
+      }
+
+      .right {
+        width: 300px;
+        height: 50px;
+        border: 2px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left"></div>
+      <div class="right"></div>
+    </div>
+  </body>
+</html>

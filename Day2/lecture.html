@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 2</title>
+
+    <style>
+      .container {
+        width: 750px;
+        height: 700px;
+        color: red;
+        /* background-color: rgb(224, 193, 153); */
+        background-image: url("https://static.kfcvietnam.com.vn/images/category/lg/MON%20AN%20NHE.jpg?v=L5Kblg");
+        background-size: cover;
+        border-color: black;
+        border-style: dashed;
+        border-width: 5px;
+        border-radius: 10px;
+      }
+
+      .container .name {
+        color: blue;
+        text-align: center;
+      }
+
+      .container_list {
+        color: green;
+      }
+
+      .container_list li:nth-child(1) {
+        background-color: red;
+      }
+
+      .container_list li:nth-child(2) {
+        background-color: yellow;
+      }
+
+      .container_list li:nth-child(3) {
+        background-color: white;
+      }
+
+      /* Cách để truy cập các thẻ nằm trong thẻ khác 
+
+      parentElement childrenElement
+
+      */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="name">Nguyễn Danh Phương</h2>
+      <b>Mô tả:</b>
+      <ul class="container_list">
+        <li>Thích ăn bún chả</li>
+        <li>Đẹp trai</li>
+        <li>Đang dạy mindx</li>
+      </ul>
+    </div>
+  </body>
+</html>

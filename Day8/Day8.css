@@ -1,0 +1,30 @@
+.container {
+  width: 300px;
+  height: 50px;
+  background-color: bisque;
+  overflow: hidden;
+  overflow-y: scroll;
+
+  transition-property: height;
+  transition-duration: 2s;
+}
+
+.ScrollY:hover ~ .container {
+  height: 230px;
+}
+
+.container1 {
+  width: 500px;
+  background-color: rgb(214, 145, 200);
+  overflow: hidden;
+  overflow-x: scroll;
+  text-wrap: nowrap; /*Xuống dòng trong text*/
+}
+
+.container2 {
+  text-wrap: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 200px;
+  background-color: chartreuse;
+}
